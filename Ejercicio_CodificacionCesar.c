@@ -7,6 +7,7 @@
 //  97-122
 
 #include <stdio.h>
+#include <string.h>
 #define enter printf("\n");
 int main() {
     char array[100];
@@ -17,7 +18,10 @@ int main() {
         if(array[i] != 32){
             if(array[i] == 122){
                 printf("%c",array[i]-25);
+            }else{
+            printf("%c",array[i]+1);
             }
+        }else{
             printf("%c",array[i]);
         }
     }
